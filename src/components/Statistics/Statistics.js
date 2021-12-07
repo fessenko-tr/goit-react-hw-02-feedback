@@ -2,13 +2,13 @@ import PropTypes from "prop-types";
 
 function Stats({ good, neutral, bad, total, positiveFeedback }) {
   return (
-    <div>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
-      <p>Total: {total}</p>
-      <p>Positive Feedback: {`${positiveFeedback}%`}</p>
-    </div>
+    <ul>
+      <li>Good: {good}</li>
+      <li>Neutral: {neutral}</li>
+      <li>Bad: {bad}</li>
+      <li>Total: {total}</li>
+      <li>Positive Feedback: {`${positiveFeedback}%`}</li>
+    </ul>
   );
 }
 

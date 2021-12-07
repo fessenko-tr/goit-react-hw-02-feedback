@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
-import FeedbackOptions from "./components/FeedBackOptions/Feedback";
-import Stats from "./components/Statistics/Statistics";
-import Section from "./components/Section/Section";
-import NotificationMessage from "./components/NotificationMessage/NotificationMessage ";
+import FeedbackOptions from "./components/FeedbackOptions";
+import Stats from "./components/Statistics";
+import Section from "./components/Section";
+import NotificationMessage from "./components/NotificationMessage";
 
 class App extends Component {
   state = {
@@ -23,7 +23,7 @@ class App extends Component {
     Math.round((100 * this.state.good) / this.countTotalFeedback());
 
   render() {
-    const feedBackTitle = "Please leave feedback";
+    const feedbackTitle = "Please leave feedback";
     const statisticsTitle = "Statistics";
     const feedBakBtnOptions = ["Good", "Neutral", "Bad"];
     const onEmptyFeedbackMsg = "There is no feedback";
@@ -33,7 +33,7 @@ class App extends Component {
 
     return (
       <>
-        <Section title={feedBackTitle}>
+        <Section title={feedbackTitle}>
           <FeedbackOptions
             options={feedBakBtnOptions}
             onLeaveFeedback={this.addFeedback}
