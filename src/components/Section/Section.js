@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function Section({ title, children }) {
   return (
-    <section>
+    <section style={{ marginLeft: "30px" }}>
       <h2>{title}</h2>
       {children}
     </section>

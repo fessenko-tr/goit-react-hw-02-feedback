@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 function FeedbackOptions({ options, onLeaveFeedback }) {
   const buttonsSet = options.map((e) => (
     <button
+      style={{ marginRight: "15px" }}
       onClick={() => {
         onLeaveFeedback(e.toLowerCase());
       }}

@@ -2,7 +2,12 @@ import PropTypes from "prop-types";
 
 function Stats({ good, neutral, bad, total, positiveFeedback }) {
   return (
-    <ul>
+    <ul
+      style={{
+        listStyle: "none",
+        padding: "0",
+      }}
+    >
       <li>Good: {good}</li>
       <li>Neutral: {neutral}</li>
       <li>Bad: {bad}</li>
