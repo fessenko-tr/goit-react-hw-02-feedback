@@ -7,4 +7,5 @@ function NotificationMessage({ message }) {
 NotificationMessage.propTypes = {
   message: PropTypes.string.isRequired,
 };
+
 export default NotificationMessage;

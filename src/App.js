@@ -3,7 +3,7 @@ import "./App.css";
 import FeedbackOptions from "./components/FeedBackOptions/Feedback";
 import Stats from "./components/Statistics/Statistics";
 import Section from "./components/Section/Section";
-import NotificationMessage from "./components/NotificationMessage/Notification message";
+import NotificationMessage from "./components/NotificationMessage/NotificationMessage ";
 
 class App extends Component {
   state = {
@@ -13,11 +13,7 @@ class App extends Component {
   };
 
   addFeedback = (btn) => {
-    this.setState((current) => {
-      return {
-        [btn]: current[btn] + 1,
-      };
-    });
+    this.setState((current) => ({ [btn]: current[btn] + 1 }));
   };
 
   countTotalFeedback = () =>
