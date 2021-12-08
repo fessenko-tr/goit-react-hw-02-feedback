@@ -25,7 +25,7 @@ class App extends Component {
   render() {
     const feedbackTitle = "Please leave feedback";
     const statisticsTitle = "Statistics";
-    const feedBakBtnOptions = ["Good", "Neutral", "Bad"];
+    const feedBakBtnOptions = Object.keys(this.state);
     const onEmptyFeedbackMsg = "There is no feedback";
     const { good, neutral, bad } = this.state;
     const totalFeedbackCount = this.countTotalFeedback();
