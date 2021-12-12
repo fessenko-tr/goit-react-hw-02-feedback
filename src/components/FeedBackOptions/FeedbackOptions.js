@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-
+import s from "./FeedbackOptions.module.css";
 function FeedbackOptions({ options, onLeaveFeedback }) {
   const buttonsSet = options.map((e) => (
     <button
-      style={{ marginRight: "15px" }}
+      className={s.btn}
       onClick={() => {
         onLeaveFeedback(e.toLowerCase());
       }}

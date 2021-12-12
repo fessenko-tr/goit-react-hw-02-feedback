@@ -1,13 +1,9 @@
 import PropTypes from "prop-types";
+import s from "./Statistics.module.css";
 
 function Stats({ good, neutral, bad, total, positiveFeedback }) {
   return (
-    <ul
-      style={{
-        listStyle: "none",
-        padding: "0",
-      }}
-    >
+    <ul className={s.list}>
       <li>Good: {good}</li>
       <li>Neutral: {neutral}</li>
       <li>Bad: {bad}</li>
